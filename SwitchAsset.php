@@ -16,7 +16,7 @@ use yii\web\AssetBundle;
  */
 class SwitchAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/nostalgiaz/bootstrap-switch/dist';
+    public $sourcePath = '@vendor/2amigos/yii2-switch-widget/assets';
 
     public $depends = [
         'yii\bootstrap\BootstrapPluginAsset'
@@ -24,7 +24,7 @@ class SwitchAsset extends AssetBundle
 
     public function init()
     {
-        $this->css[] = YII_DEBUG ? 'css/bootstrap3/bootstrap-switch.css' : 'css/bootstrap3/bootstrap-switch.min.css';
+        $this->css[] = YII_DEBUG ? 'css/bootstrap-switch.css' : 'css/bootstrap-switch.min.css';
         $this->js[] = YII_DEBUG ? 'js/bootstrap-switch.js' : 'js/bootstrap-switch.min.js';
     }
 } 

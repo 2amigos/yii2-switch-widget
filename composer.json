@@ -11,15 +11,8 @@
             "homepage": "http://2amigos.us"
         }
     ],
-    "repositories": [
-        {
-            "type": "git",
-            "url": "git@github.com:nostalgiaz/bootstrap-switch.git"
-        }
-    ],
     "require": {
         "yiisoft/yii2": "*",
-        "nostalgiaz/bootstrap-switch": "*"
     },
     "autoload": {
         "psr-4": {
