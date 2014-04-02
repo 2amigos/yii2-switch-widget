@@ -1,0 +1,29 @@
+{
+    "name": "2amigos/yii2-switch-widget",
+    "description": "Bootstrap Switch widget for Yii2.",
+    "keywords": ["yii", "extension", "widget", "switch"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Antonio Ramirez",
+            "email": "ramirez.cobos@gmail.com",
+            "homepage": "http://2amigos.us"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:nostalgiaz/bootstrap-switch.git"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "nostalgiaz/bootstrap-switch": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "dosamigos\\switchinput\\": ""
+        }
+    }
+}
