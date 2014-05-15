@@ -55,7 +55,7 @@ trait SwitchTrait
         $js[] = ";jQuery('$this->selector').bootstrapSwitch($options);";
         if (!empty($this->clientEvents)) {
             foreach ($this->clientEvents as $event => $handler) {
-                $js[] = "jQuery($this->selector).on('$event', $handler);";
+                $js[] = "jQuery('$this->selector').on('$event', $handler);";
             }
         }
         $view->registerJs(implode("\n", $js));
