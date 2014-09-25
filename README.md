@@ -39,7 +39,7 @@ use dosamigos\switchinput\SwitchBox;
 ?>
 
 <?= $form->field($model, 'validated')->widget(SwitchBox::className(),[
-	clientOptions' => [
+	'clientOptions' => [
 		'size' => 'large',
 		'onColor' => 'success',
 		'offColor' => 'danger'
@@ -52,7 +52,7 @@ use dosamigos\switchinput\SwitchBox;
 <?= \dosamigos\switchinput\SwitchBox::widget([
 	'name' => 'Test',
 	'checked' => true,
-	clientOptions' => [
+	'clientOptions' => [
 		'size' => 'large',
 		'onColor' => 'success',
 		'offColor' => 'danger'
