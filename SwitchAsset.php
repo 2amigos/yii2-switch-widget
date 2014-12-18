@@ -16,7 +16,7 @@ use yii\web\AssetBundle;
  */
 class SwitchAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/2amigos/yii2-switch-widget/assets';
+    public $sourcePath = '@vendor/phpffcms/yii2-switch-widget/assets';
 
     public $depends = [
         'yii\bootstrap\BootstrapPluginAsset'

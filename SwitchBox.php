@@ -35,14 +35,20 @@ class SwitchBox extends InputWidget
     /**
      * @var bool whether to display the label inline or not. Defaults to true.
      */
-    public $inlineLabel = true;
+    public $inlineLabel = false;
+
+    /**
+     * @var bool show label with widget checkbox switcher. Default is true.
+     */
+    public $showLabel = true;
 
     /**
      * @inheritdoc
      */
     public function run()
     {
-
+        if(!$this->showLabel)
+            $this->options['label'] = false;
         if ($this->hasModel()) {
             $input = Html::activeCheckbox($this->model, $this->attribute, $this->options);
         } else {
