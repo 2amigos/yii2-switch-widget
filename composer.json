@@ -1,5 +1,5 @@
 {
-    "name": "2amigos/yii2-switch-widget",
+    "name": "phpffcms/yii2-switch-widget",
     "description": "Bootstrap Switch widget for Yii2.",
     "keywords": ["yii", "extension", "widget", "switch"],
     "type": "yii2-extension",
