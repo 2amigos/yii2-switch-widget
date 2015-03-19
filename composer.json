@@ -2,7 +2,11 @@
     "name": "2amigos/yii2-switch-widget",
     "description": "The bootstrap switch widget for the Yii framework",
     "keywords": [
+        "2amigos",
+        "yii",
         "yii2",
+        "yii 2",
+        "widget",
         "switch"
     ],
     "type": "yii2-extension",
