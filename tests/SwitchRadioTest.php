@@ -7,6 +7,7 @@
 
 namespace tests;
 
+use dosamigos\switchinput\SwitchRadio;
 use tests\models\Model;
 use Yii;
 
@@ -21,8 +22,15 @@ class SwitchRadioTest extends \PHPUnit_Framework_TestCase
         $view = Yii::$app->getView();
         $content = $view->render('//switch-radio', ['model' => $model]);
         $actual = $view->render('//layouts/main', ['content' => $content]);
-        file_put_contents(__DIR__ . '/data/test-switch-radio.bin', $actual);
         $expected = file_get_contents(__DIR__ . '/data/test-switch-radio.bin');
         $this->assertEquals($expected, $actual);
+    }
+
+    /**
+     * @expectedException \yii\base\InvalidConfigException
+     */
+    public function testWidgetExceptionIsRaisedWhenItemsAreEmpty()
+    {
+        SwitchRadio::begin(['name' => 'test']);
     }
 }
