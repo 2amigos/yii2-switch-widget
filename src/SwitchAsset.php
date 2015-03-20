@@ -1,30 +1,29 @@
 <?php
 /**
- * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
- * @link http://2amigos.us
- * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
+ * @link https://github.com/2amigos/yii2-switch-widget
+ * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
+ * @license http://opensource.org/licenses/BSD-3-Clause
  */
+
 namespace dosamigos\switchinput;
 
 use yii\web\AssetBundle;
 
 /**
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
- * @link http://www.ramirezcobos.com/
- * @link http://www.2amigos.us/
- * @package dosamigos\yii2\widgets
+ * SwitchAsset
+ *
+ * @author Alexander Kochetov <creocoder@gmail.com>
  */
 class SwitchAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/2amigos/yii2-switch-widget/assets';
-
-    public $depends = [
-        'yii\bootstrap\BootstrapPluginAsset'
+    public $sourcePath = '@bower/bootstrap-switch/dist';
+    public $css = [
+        'css/bootstrap3/bootstrap-switch.css',
     ];
-
-    public function init()
-    {
-        $this->css[] = YII_DEBUG ? 'css/bootstrap-switch.css' : 'css/bootstrap-switch.min.css';
-        $this->js[] = YII_DEBUG ? 'js/bootstrap-switch.js' : 'js/bootstrap-switch.min.js';
-    }
-} 
+    public $js = [
+        'js/bootstrap-switch.js',
+    ];
+    public $depends = [
+        'yii\bootstrap\BootstrapPluginAsset',
+    ];
+}
