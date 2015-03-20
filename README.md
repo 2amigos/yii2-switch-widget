@@ -122,7 +122,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## License
 
-The BSD License (BSD). Please see [License File](LICENSE.md) for more information.
+The BSD License (BSD). Please see [License File](LICENSE.md) for more information. 
 
 <blockquote>
     <a href="http://www.2amigos.us"><img src="http://www.gravatar.com/avatar/55363394d72945ff7ed312556ec041e0.png"></a><br>
