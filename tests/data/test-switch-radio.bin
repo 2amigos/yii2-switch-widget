@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="/1/css/bootstrap.css" rel="stylesheet">
+<link href="/0/css/bootstrap3/bootstrap-switch.css" rel="stylesheet"></head>
+<body>
+
+<div class="form-group"><input type="hidden" name="Model[test]" value="0"><label><input type="radio" id="model-test" name="Model[test]" value="0" container=""> item1</label> &nbsp;<input type="hidden" name="Model[test]" value="0"><label><input type="radio" id="model-test" name="Model[test]" value="1" container=""> item2</label> &nbsp;<input type="hidden" name="Model[test]" value="0"><label><input type="radio" id="model-test" name="Model[test]" value="2" container=""> item3</label></div>
+<div class="form-group"><label><input type="radio" id="w2" name="test" value="0" container=""> item1</label> &nbsp;<label><input type="radio" id="w2" name="test" value="1" container=""> item2</label> &nbsp;<label><input type="radio" id="w2" name="test" value="2" container=""> item3</label></div>
+<div class="form-group"><label><input type="radio" id="w3" name="test" value="10" container=""> item1</label> &nbsp;<label><input type="radio" id="w3" name="test" value="20" container=""> item2</label> &nbsp;<label><input type="radio" id="w3" name="test" value="30" container=""> item3</label></div>
+<div class="form-group"><label><input type="radio" id="w4" name="test" value="0" container=""> item1</label> &nbsp;<label><input type="radio" id="w4" name="test" value="1" container=""> item2</label> &nbsp;<label><input type="radio" id="w4" name="test" value="2" container=""> item3</label></div><script src="/2/jquery.js"></script>
+<script src="/1/js/bootstrap.js"></script>
+<script src="/0/js/bootstrap-switch.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+;jQuery('input:radio[name="Model[test]"]').bootstrapSwitch({"animate":true});
+;jQuery('input:radio[name="test"]').bootstrapSwitch({"animate":true});
+;jQuery('input:radio[name="test"]').bootstrapSwitch({"animate":true});
+jQuery('input:radio[name="test"]').on('test', function () { });
+});</script></body>
+</html>

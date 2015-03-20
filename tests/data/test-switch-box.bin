@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="/1/css/bootstrap.css" rel="stylesheet">
+<link href="/0/css/bootstrap3/bootstrap-switch.css" rel="stylesheet"></head>
+<body>
+
+<input type="hidden" name="Model[test]" value="0"><label><input type="checkbox" id="model-test" name="Model[test]" value="1"> Test</label>
+<input type="checkbox" id="w0" name="test" value="1">
+<input type="checkbox" id="w1" name="test" value="1"><script src="/2/jquery.js"></script>
+<script src="/1/js/bootstrap.js"></script>
+<script src="/0/js/bootstrap-switch.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+;jQuery('#model-test').bootstrapSwitch({"animate":true});
+;jQuery('#w0').bootstrapSwitch({"animate":true});
+;jQuery('#w1').bootstrapSwitch({"animate":true});
+jQuery('#w1').on('test', function () { });
+});</script></body>
+</html>
