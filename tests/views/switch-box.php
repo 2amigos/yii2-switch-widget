@@ -13,6 +13,12 @@ use yii\web\JsExpression;
 ]) ?>
 
 <?= SwitchBox::widget([
+    'model' => $model,
+    'attribute' => 'test',
+    'renderLabel' => false,
+]) ?>
+
+<?= SwitchBox::widget([
     'name' => 'test',
 ]) ?>
 
