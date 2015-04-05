@@ -86,7 +86,7 @@ use dosamigos\switchinput\SwitchRadio;
 ```
 ***Example of use without a model***
 
-```
+```php 
 <?= \dosamigos\switchinput\SwitchRadio::widget([
 	'name' => 'shape',
 	'inline' => false,
@@ -101,6 +101,20 @@ use dosamigos\switchinput\SwitchRadio;
 		50 => 'master'
 	],
 	'labelOptions' => ['style' => 'font-size:16px']
+]);?>
+```
+
+***Not displaying the label*** 
+```php 
+<?= $form->field($model, 'validated')->widget(SwitchBox::className(),[
+   'options' => [
+       'label' => false
+   ]
+    'clientOptions' => [
+        'size' => 'large',
+        'onColor' => 'success',
+        'offColor' => 'danger'
+    ]
 ]);?>
 ```
 
