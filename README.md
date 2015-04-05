@@ -107,9 +107,9 @@ use dosamigos\switchinput\SwitchRadio;
 ***Not displaying the label*** 
 ```php 
 <?= $form->field($model, 'validated')->widget(SwitchBox::className(),[
-   'options' => [
-       'label' => false
-   ]
+    'options' => [
+        'label' => false
+    ],
     'clientOptions' => [
         'size' => 'large',
         'onColor' => 'success',
