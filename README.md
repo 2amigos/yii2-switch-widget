@@ -7,7 +7,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/2amigos/yii2-switch-widget.svg?style=flat-square)](https://scrutinizer-ci.com/g/2amigos/yii2-switch-widget)
 [![Total Downloads](https://img.shields.io/packagist/dt/2amigos/yii2-switch-widget.svg?style=flat-square)](https://packagist.org/packages/2amigos/yii2-switch-widget)
 
-Renders a [Bootstrap Toggle Switch plugin](http://www.bootstrap-switch.org/) widget.
+Renders a [Bootstrap Toggle Switch plugin](http://bootstrapswitch.com/) widget.
 
 ## Installation
 
@@ -46,24 +46,24 @@ use dosamigos\switchinput\SwitchBox;
 ?>
 
 <?= $form->field($model, 'validated')->widget(SwitchBox::className(),[
-	'clientOptions' => [
-		'size' => 'large',
-		'onColor' => 'success',
-		'offColor' => 'danger'
-	]
+    'clientOptions' => [
+        'size' => 'large',
+        'onColor' => 'success',
+        'offColor' => 'danger'
+    ]
 ]);?>
 ```
 ***Example of use without a model***
 
 ```
 <?= \dosamigos\switchinput\SwitchBox::widget([
-	'name' => 'Test',
-	'checked' => true,
-	'clientOptions' => [
-		'size' => 'large',
-		'onColor' => 'success',
-		'offColor' => 'danger'
-	]
+    'name' => 'Test',
+    'checked' => true,
+    'clientOptions' => [
+        'size' => 'large',
+        'onColor' => 'success',
+        'offColor' => 'danger'
+    ]
 ]);?>
 ```
 **SwitchRadio**
@@ -77,30 +77,30 @@ This widget renders a Bootstrap Toggle Switch Checkbox radio list control. Best 
 use dosamigos\switchinput\SwitchRadio;
 ?>
 <?= $form->field($model, 'status')->widget(SwitchRadio::className(), [
-	'items' => [
-		20 => 'rejected',
-		40 => 'approved',
-		50 => 'on hold'
-	],
+    'items' => [
+        20 => 'rejected',
+        40 => 'approved',
+        50 => 'on hold'
+    ],
 ]);?>
 ```
 ***Example of use without a model***
 
 ```php 
 <?= \dosamigos\switchinput\SwitchRadio::widget([
-	'name' => 'shape',
-	'inline' => false,
-	'items' => [
-		[
-			'label' => 'best',
-			'value' => 100,
-			'options' => ['data-size' => 'mini']
-		],
-		20 => 'good',
-		40 => 'superior',
-		50 => 'master'
-	],
-	'labelOptions' => ['style' => 'font-size:16px']
+    'name' => 'shape',
+    'inline' => false,
+    'items' => [
+        [
+            'label' => 'best',
+            'value' => 100,
+            'options' => ['data-size' => 'mini']
+        ],
+        20 => 'good',
+        40 => 'superior',
+        50 => 'master'
+    ],
+    'labelOptions' => ['style' => 'font-size:16px']
 ]);?>
 ```
 
@@ -118,6 +118,14 @@ use dosamigos\switchinput\SwitchRadio;
 ]);?>
 ```
 
+## Using code fixer
+
+We have added a PHP code fixer to standardize our code. It includes Symfony, PSR2 and some contributors rules. 
+
+```bash 
+./vendor/bin/php-cs-fixer fix ./src --config .php_cs
+```
+
 ## Testing
 
 ```bash
@@ -131,7 +139,6 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## Credits
 
 - [Antonio Ramirez](https://github.com/tonydspaniard)
-- [Alexander Kochetov](https://github.com/creocoder)
 - [All Contributors](https://github.com/2amigos/yii2-selectize-widget/graphs/contributors)
 
 ## License
@@ -140,6 +147,6 @@ The BSD License (BSD). Please see [License File](LICENSE.md) for more informatio
 
 <blockquote>
     <a href="http://www.2amigos.us"><img src="http://www.gravatar.com/avatar/55363394d72945ff7ed312556ec041e0.png"></a><br>
-    <i>web development has never been so fun</i><br>
+    <i>Custom Software | Web & Mobile Software Development</i><br>
     <a href="http://www.2amigos.us">www.2amigos.us</a>
 </blockquote>
